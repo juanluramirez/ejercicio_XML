@@ -6,5 +6,6 @@ Ejercicio en XML sobre Procesiones de semana santa de Zaragoza
 
 3)Pedir por teclado el inicio del campo cofradia, (Por ejemplo buscar todas las cofradias que empiecen por "Hermandad").
 
-4)
+4)Pedir por teclado el "id" de una cofradia y mostrar la hora de salida y el sitio de salida de esa cofradia.
+
 5)
