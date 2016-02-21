@@ -4,7 +4,7 @@ Ejercicio en XML sobre Procesiones de semana santa de Zaragoza
 
 2)Contador del numero de cofradias que salen el lunes, martes, miercoles,jueves y el viernes, sabado santo y domingo Resurreccion.
 
-3)Pedir por teclado 
+3)Pedir por teclado el inicio del campo cofradia, (Por ejemplo buscar todas las cofradias que empiecen por "Hermandad").
 
 4)
 5)
