@@ -23,3 +23,11 @@ id_cofradia=raw_input("Dime el id de la cofradia: ")
 for cofradias in procesiones:
 	if cofradias.find("id").text==id_cofradia:
 		print "La hora de salida de la",cofradias.find("cofradia").text,"es a las",cofradias.find("hora").text,"y sale de",cofradias.find("salida").text
+
+#5)Pedir por teclado inicio del campo de salida y muestra la hora de salida y el nombre de la cofradia.
+
+salida=raw_input("Dime inicio salida procesion: ")
+
+for cofradias in procesiones:
+	if cofradias.find("salida").text.startswith(salida.title()):
+		print "La cofradia es",cofradias.find("cofradia").text,"sale de",cofradias.find("salida").text,"y sale a las",cofradias.find("hora").text
