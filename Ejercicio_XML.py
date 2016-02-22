@@ -95,48 +95,48 @@ print "================\n"
 print "Salen un total de:\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Martes Santo":
-		contador_lunes=contador_lunes+1
-print contador_lunes
+		contador_martes=contador_martes+1
+print contador_martes
 
 print "\n Miércoles Santo"
 print "====================\n"
 print "Salen un total de:\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Miércoles Santo":
-		contador_lunes=contador_lunes+1
-print contador_lunes
+		contador_miercoles=contador_miercoles+1
+print contador_miercoles
 
 print "\n Jueves Santo"
 print "=================\n"
 print "Salen un total de:\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Jueves Santo":
-		contador_lunes=contador_lunes+1
-print contador_lunes
+		contador_jueves=contador_jueves+1
+print contador_jueves
 
 print "\n Viernes Santo"
 print "==================\n"
 print "Salen un total de:\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Viernes Santo":
-		contador_lunes=contador_lunes+1
-print contador_lunes
+		contador_viernes=contador_viernes+1
+print contador_viernes
 
 print "\n Sábado Santo"
 print "=================\n"
 print "Salen un total de:\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Sábado Santo":
-		contador_lunes=contador_lunes+1
-print contador_lunes
+		contador_sabado=contador_sabado+1
+print contador_sabado
 
 print "\n Domingo de Resurrección"
 print "===========================\n"
 print "Salen un total de:\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Domingo de Resurrección":
-		contador_lunes=contador_lunes+1
-print contador_lunes
+		contador_resurreccion=contador_resurreccion+1
+print contador_resurreccion
 
 #3)Pedir por teclado el inicio del campo cofradia, (Por ejemplo buscar todas las cofradias que empiecen por "Hermandad").
 
