@@ -37,7 +37,7 @@ print "====================\n"
 print "Las cofradias que salen son:\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Miércoles Santo":
-		print "La cofradia es",nombres.find("cofradia").text
+		print nombres.find("cofradia").text
 print "\n Jueves Santo"
 print "=================\n"
 print "Las cofradias que salen son:\n"
@@ -65,7 +65,54 @@ for nombres in procesiones:
 
 #2)Contador del numero de cofradias que salen el Domingo de Ramos, lunes, martes, miercoles,jueves y el viernes, sabado santo y domingo Resurreccion.
 
-
+print "\n Domingo de Ramos"º
+print "====================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Domingo de Ramos":
+		print len(nombres.find("cofradia").text)
+print "\n Lunes Santo"
+print "================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Lunes Santo":
+		print len(nombres.find("cofradia").text)
+print "\n Martes Santo"
+print "================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Martes Santo":
+		print len(nombres.find("cofradia").text)
+print "\n Miércoles Santo"
+print "====================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Miércoles Santo":
+		print len(nombres.find("cofradia").text)
+print "\n Jueves Santo"
+print "=================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Jueves Santo":
+		print len(nombres.find("cofradia").text)
+print "\n Viernes Santo"
+print "==================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Viernes Santo":
+		print len(nombres.find("cofradia").text)
+print "\n Sábado Santo"
+print "=================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Sábado Santo":
+		print len(nombres.find("cofradia").text)
+print "\n Domingo de Resurrección"
+print "===========================\n"
+print "Salen un total de:\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Domingo de Resurrección":
+		print len(nombres.find("cofradia").text)
 
 #3)Pedir por teclado el inicio del campo cofradia, (Por ejemplo buscar todas las cofradias que empiecen por "Hermandad").
 
