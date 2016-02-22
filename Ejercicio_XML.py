@@ -160,7 +160,7 @@ calle=raw_input("Dime por donde pasa la procesion: ")
 
 print "Las cofradias que pasan por la calle",calle, "son:\n"
 for cofradias in procesiones:
-	calles=cofradias.find("description").split(",")
+	calles=cofradias.find("description").text.split(",")
 	for paso in calles:
-		if calle==paso:
-			print cofradias.find("cofradia").text
+		if calle.title()==paso.title():
+			print cofradias.find("cofradia").text,"y sale a las",cofradias.find("hora")
