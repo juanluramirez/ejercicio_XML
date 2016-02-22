@@ -156,8 +156,11 @@ for cofradias in procesiones:
 
 #5)Pedir por teclado inicio del campo de salida y muestra la hora de salida y el nombre de la cofradia.
 
-salida=raw_input("Dime inicio salida procesion: ")
+calle=raw_input("Dime por donde pasa la procesion: ")
 
+print "Las cofradias que pasan por la calle",calle, "son:\n"
 for cofradias in procesiones:
-	if cofradias.find("salida").text.startswith(salida.title()):
-		print "La cofradia es",cofradias.find("cofradia").text,"sale de",cofradias.find("salida").text,"y sale a las",cofradias.find("hora").text
+	calles=cofradias.find("description").split(",")
+	for paso in calles:
+		if calle==paso:
+			print cofradias.find("cofradia").text
