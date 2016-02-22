@@ -10,11 +10,46 @@ procesiones=raiz.xpath("//procesion")
 
 #1)Lista los nombres de las cofradia que salen el lunes, martes, miercoles,jueves y el viernes, sabado santo y domingo Resurreccion.
 
+print "\n Domingo de Ramos"
+print "============\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Domingo de Ramos":
+		print "La cofradia se llama",nombres.find("cofradia").text
 print "\n Lunes Santo"
 print "============\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Lunes Santo":
-		print "La cofradia se llama",nombres.find("cofradia").text,"y sale el",nombres.find("dia")
+		print "La cofradia se llama",nombres.find("cofradia").text
+print "\n Martes Santo"
+print "============\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Martes Santo":
+		print "La cofradia se llama",nombres.find("cofradia").text
+print "\n Miercoles Santo"
+print "============\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Miercoles Santo":
+		print "La cofradia se llama",nombres.find("cofradia").text
+print "\n Jueves Santo"
+print "============\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Jueves Santo":
+		print "La cofradia se llama",nombres.find("cofradia").text
+print "\n Viernes Santo"
+print "============\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Viernes Santo":
+		print "La cofradia se llama",nombres.find("cofradia").text
+print "\n Sabado Santo"
+print "============\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Sabado Santo":
+		print "La cofradia se llama",nombres.find("cofradia").text
+print "\n Domingo de Resurreccion"
+print "============\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Domingo de Resurreccion":
+		print "La cofradia se llama",nombres.find("cofradia").text
 
 #2)Contador del numero de cofradias que salen el lunes, martes, miercoles,jueves y el viernes, sabado santo y domingo Resurreccion.
 
