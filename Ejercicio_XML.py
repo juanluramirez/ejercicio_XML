@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 from lxml import etree
 
 arbol=etree.parse('procesion.xml')
@@ -10,45 +14,50 @@ procesiones=raiz.xpath("//procesion")
 
 #1)Lista los nombres de las cofradia que salen el lunes, martes, miercoles,jueves y el viernes, sabado santo y domingo Resurreccion.
 
+print "\n Sábado de Pasión"
+print "====================\n"
+for nombres in procesiones:
+	if nombres.find("dia").text=="Sábado de Pasión":
+		print "La cofradia se llama",nombres.find("cofradia").text
 print "\n Domingo de Ramos"
-print "============\n"
+print "====================\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Domingo de Ramos":
 		print "La cofradia se llama",nombres.find("cofradia").text
 print "\n Lunes Santo"
-print "============\n"
+print "================\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Lunes Santo":
 		print "La cofradia se llama",nombres.find("cofradia").text
 print "\n Martes Santo"
-print "============\n"
+print "================\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Martes Santo":
 		print "La cofradia se llama",nombres.find("cofradia").text
-print "\n Miercoles Santo"
-print "============\n"
+print "\n Miércoles Santo"
+print "====================\n"
 for nombres in procesiones:
-	if nombres.find("dia").text=="Miercoles Santo":
-		print "La cofradia se llama",nombres.find("cofradia").text
+	if nombres.find("dia").text=="Miércoles Santo":
+		print "La cofradia es",nombres.find("cofradia").text
 print "\n Jueves Santo"
-print "============\n"
+print "=================\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Jueves Santo":
 		print "La cofradia se llama",nombres.find("cofradia").text
 print "\n Viernes Santo"
-print "============\n"
+print "==================\n"
 for nombres in procesiones:
 	if nombres.find("dia").text=="Viernes Santo":
 		print "La cofradia se llama",nombres.find("cofradia").text
-print "\n Sabado Santo"
-print "============\n"
+print "\n Sábado Santo"
+print "=================\n"
 for nombres in procesiones:
-	if nombres.find("dia").text=="Sabado Santo":
+	if nombres.find("dia").text=="Sábado Santo":
 		print "La cofradia se llama",nombres.find("cofradia").text
-print "\n Domingo de Resurreccion"
-print "============\n"
+print "\n Domingo de Resurrección"
+print "===========================\n"
 for nombres in procesiones:
-	if nombres.find("dia").text=="Domingo de Resurreccion":
+	if nombres.find("dia").text=="Domingo de Resurrección":
 		print "La cofradia se llama",nombres.find("cofradia").text
 
 #2)Contador del numero de cofradias que salen el lunes, martes, miercoles,jueves y el viernes, sabado santo y domingo Resurreccion.
