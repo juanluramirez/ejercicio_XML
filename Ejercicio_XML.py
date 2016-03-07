@@ -165,3 +165,10 @@ for cofradias in procesiones:
 
 #6)Pedir por teclado (de lunes a domingo) y generar un fichero html con la siguiente estructura:
 
+dia=raw_input("Dime un dia de la semana: ")
+
+fichero_html="index.html"
+fichero=open(fichero_html,"w")
+
+for dias in procesion:
+	if dia==dias.find("dia").text:
