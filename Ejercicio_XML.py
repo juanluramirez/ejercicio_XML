@@ -162,3 +162,6 @@ print "Las cofradias que pasan por la calle",calle, "son:\n"
 for cofradias in procesiones:
 	if calle.title() in cofradias.find("description").text:
 		print cofradias.find("cofradia").text,"y sale a las",cofradias.find("hora").text
+
+#6)Pedir por teclado (de lunes a domingo) y generar un fichero html con la siguiente estructura:
+
