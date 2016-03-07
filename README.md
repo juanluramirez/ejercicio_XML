@@ -9,3 +9,5 @@ Ejercicio en XML sobre Procesiones de semana santa de Zaragoza
 4)Pedir por teclado el "id" de una cofradia y mostrar la hora de salida y el sitio de salida de esa cofradia.
 
 5)Pedir por teclado una calle y muestra las cofradias que pasan por ahi y la hora de salida.
+
+6)Pedir por teclado (de lunes a domingo) y generar un fichero html con la siguiente estructura:
