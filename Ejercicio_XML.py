@@ -171,8 +171,8 @@ fichero_html="index.html"
 fichero=open(fichero_html,"w")
 
 
-for dias in procesion:
+for dias in procesiones:
 	if dia==dias.find("dia").text:
 		fichero.write("<h1>"+dias.find("cofradia").text+"</h1>"+"\n")
 		fichero.write("<p>"+dias.find("hora").text+dias.find("salida").text+"</h1>"+"\n")
-		fichero.write("<img src>"+dias.find("image").text+"</>")
+		fichero.write('<img src="'+dias.find("image").text+'"/>')
